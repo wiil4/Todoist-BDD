@@ -1,0 +1,95 @@
+{
+  "uuid": "6bfe455492984c489f003baefb684158",
+  "historyId": "TC01LogIn",
+  "fullName": "TC01LogIn",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "fv-az548-541"
+    },
+    {
+      "name": "feature",
+      "value": "TodoistCRUD"
+    },
+    {
+      "name": "tag",
+      "value": "functionality"
+    },
+    {
+      "name": "tag",
+      "value": "logIn"
+    }
+  ],
+  "links": [],
+  "name": "TC01LogIn",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "Unable to locate driver with path: /home/runner/work/Todoist-BDD/Todoist-BDD/Todoist-BDD/src/resources/chromedriver.exe/chromedriver, for more information on how to install drivers see https://www.selenium.dev/documentation/webdriver/getting_started/install_drivers/ -> No process is associated with this object.",
+    "trace": "OpenQA.Selenium.WebDriverException: Unable to locate driver with path: /home/runner/work/Todoist-BDD/Todoist-BDD/Todoist-BDD/src/resources/chromedriver.exe/chromedriver, for more information on how to install drivers see https://www.selenium.dev/documentation/webdriver/getting_started/install_drivers/\n ---> System.InvalidOperationException: No process is associated with this object.\n   at System.Diagnostics.Process.EnsureState(State state)\n   at System.Diagnostics.Process.get_HasExited()\n   at System.Diagnostics.Process.EnsureState(State state)\n   at System.Diagnostics.Process.get_ExitCode()\n   at OpenQA.Selenium.SeleniumManager.RunCommand(String fileName, String arguments)\n   at OpenQA.Selenium.SeleniumManager.DriverPath(DriverOptions options)\n   at OpenQA.Selenium.DriverFinder.VerifyDriverServicePath(DriverService service, DriverOptions options)\n   --- End of inner exception stack trace ---\n   at OpenQA.Selenium.DriverFinder.VerifyDriverServicePath(DriverService service, DriverOptions options)\n   at OpenQA.Selenium.Chromium.ChromiumDriver..ctor(ChromiumDriverService service, ChromiumOptions options, TimeSpan commandTimeout)\n   at OpenQA.Selenium.Chrome.ChromeDriver..ctor(ChromeDriverService service, ChromeOptions options, TimeSpan commandTimeout)\n   at OpenQA.Selenium.Chrome.ChromeDriver..ctor(String chromeDriverDirectory, ChromeOptions options, TimeSpan commandTimeout)\n   at OpenQA.Selenium.Chrome.ChromeDriver..ctor(String chromeDriverDirectory, ChromeOptions options)\n   at OpenQA.Selenium.Chrome.ChromeDriver..ctor(String chromeDriverDirectory)\n   at Todoist_BDD.src.code.factoryBrowser.Chrome.Create() in /home/runner/work/Todoist-BDD/Todoist-BDD/Todoist-BDD/src/code/factoryBrowser/Chrome.cs:line 16\n   at Todoist_BDD.src.code.session.Session..ctor() in /home/runner/work/Todoist-BDD/Todoist-BDD/Todoist-BDD/src/code/session/Session.cs:line 20\n   at Todoist_BDD.src.code.session.Session.Instance() in /home/runner/work/Todoist-BDD/Todoist-BDD/Todoist-BDD/src/code/session/Session.cs:line 27\n   at Todoist_BDD.src.code.test.specflow.BaseSteps.CloseBrowser() in /home/runner/work/Todoist-BDD/Todoist-BDD/Todoist-BDD/src/code/test/specflow/BaseSteps.cs:line 30\n   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)\n   at Allure.SpecFlowPlugin.AllureBindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Given  A valid email and password",
+      "status": "skipped",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "table",
+          "source": "d595e738d2e54788ad56a937f2ae68df-attachment.csv",
+          "type": "text/csv"
+        }
+      ],
+      "parameters": [],
+      "start": 1685943415389,
+      "stop": 1685943415405
+    },
+    {
+      "name": "When  I try to logIn",
+      "status": "skipped",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1685943415407,
+      "stop": 1685943415407
+    },
+    {
+      "name": "Then  I expect to be successfully LogedIn",
+      "status": "skipped",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1685943415407,
+      "stop": 1685943415407
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1685943415375,
+  "stop": 1685943415412
+}

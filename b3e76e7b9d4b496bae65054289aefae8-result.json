@@ -1,0 +1,95 @@
+{
+  "uuid": "3d051e1fcd5e432c9c278959f0322d83",
+  "historyId": "TC01LogIn",
+  "fullName": "TC01LogIn",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-4S814UH"
+    },
+    {
+      "name": "feature",
+      "value": "TodoistCRUD"
+    },
+    {
+      "name": "tag",
+      "value": "functionality"
+    },
+    {
+      "name": "tag",
+      "value": "logIn"
+    }
+  ],
+  "links": [],
+  "name": "TC01LogIn",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "disconnected: unable to send message to renderer\n  (failed to check if window was closed: disconnected: not connected to DevTools)\n  (Session info: chrome=113.0.5672.129)",
+    "trace": "OpenQA.Selenium.WebDriverException: disconnected: unable to send message to renderer\n  (failed to check if window was closed: disconnected: not connected to DevTools)\n  (Session info: chrome=113.0.5672.129)\r\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\r\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.WebDriver.FindElement(String mechanism, String value)\r\n   at OpenQA.Selenium.By.<.ctor>b__11_0(ISearchContext context)\r\n   at OpenQA.Selenium.By.FindElement(ISearchContext context)\r\n   at OpenQA.Selenium.WebDriver.FindElement(By by)\r\n   at Todoist_BDD.src.code.control.Control.FindControl() in D:\\QABootcamp\\Todoist-BDD\\Todoist-BDD\\src\\code\\control\\Control.cs:line 23\r\n   at Todoist_BDD.src.code.control.Control.Click() in D:\\QABootcamp\\Todoist-BDD\\Todoist-BDD\\src\\code\\control\\Control.cs:line 28\r\n   at Todoist_BDD.src.code.test.specflow.BaseSteps.LogIn(String email, String password) in D:\\QABootcamp\\Todoist-BDD\\Todoist-BDD\\src\\code\\test\\specflow\\BaseSteps.cs:line 17\r\n   at Todoist_BDD.src.code.test.specflow.LogInStepDefinitions.WhenITryToLogIn() in D:\\QABootcamp\\Todoist-BDD\\Todoist-BDD\\src\\code\\test\\specflow\\LogInStepDefinitions.cs:line 25\r\n   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)\r\n   at Allure.SpecFlowPlugin.AllureBindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)\r\n   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments, TimeSpan& duration)\r\n   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Given  A valid email and password",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "table",
+          "source": "042f49bc0e4b4afd9be94b398782de41-attachment.csv",
+          "type": "text/csv"
+        }
+      ],
+      "parameters": [],
+      "start": 1685943006407,
+      "stop": 1685943006437
+    },
+    {
+      "name": "When  I try to logIn",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1685943006437,
+      "stop": 1685943020421
+    },
+    {
+      "name": "Then  I expect to be successfully LogedIn",
+      "status": "skipped",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1685943020422,
+      "stop": 1685943020423
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1685943006401,
+  "stop": 1685943020427
+}
