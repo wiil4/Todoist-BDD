@@ -5,6 +5,7 @@ using Todoist_BDD.src.code.session;
 
 namespace Todoist_BDD.src.code.test.specflow
 {
+    [Binding]
     public class BaseSteps
     {
         protected MainPage mainPage = new MainPage();

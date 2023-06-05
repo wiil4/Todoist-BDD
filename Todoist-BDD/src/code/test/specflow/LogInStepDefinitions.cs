@@ -6,15 +6,15 @@ using Todoist_BDD.src.code.models;
 namespace Todoist_BDD.src.code.test.specflow
 {
     [Binding]
+    [Scope(Tag ="logIn")]
     public class LogInStepDefinitions : BaseSteps
     {
-        string email = string.Empty;
-        string password = string.Empty;
-        LogInData logInData;
+        LogInData logInData = new LogInData();
 
         [Given(@"A valid email and password")]
         public void GivenAValidEmailAndPassword(Table table)
         {
+            //OpenBrowser();
             logInData = table.CreateInstance<LogInData>();
         }
 
@@ -28,6 +28,7 @@ namespace Todoist_BDD.src.code.test.specflow
         public void ThenIExpectToBeSuccessfullyLogedIn()
         {
             Assert.IsTrue(logInPage.IsInboxDisplayed(), "Error! Log In was not successful!");
+            //CloseBrowser();
         }
     }
 }

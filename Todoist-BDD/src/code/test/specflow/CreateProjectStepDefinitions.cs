@@ -10,6 +10,7 @@ namespace Todoist_BDD.src.code.test.specflow
         [Given(@"I am correctly logged in")]
         public void GivenIAmCorrectlyLoggedIn()
         {
+            //OpenBrowser();
             LogIn("willcorreos@gmail.com", "todoisttest");
         }
 
@@ -40,10 +41,11 @@ namespace Todoist_BDD.src.code.test.specflow
             Thread.Sleep(1000);
         }
 
-        [When(@"I expect project to be displayed")]
-        public void WhenIExpectProjectToBeDisplayed()
+        [Then(@"I expect project to be displayed")]
+        public void ThenIExpectProjectToBeDisplayed()
         {
             Assert.That(projectsSection.ProjectNameDisplayed("MojixProject"), Is.True, "Error! Project was not successfully created");
+            //CloseBrowser();
         }
     }
 }

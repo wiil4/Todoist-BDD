@@ -12,6 +12,7 @@ namespace Todoist_BDD.src.code.test.specflow
         [Given(@"I am correctly logged in")]
         public void GivenIAmCorrectlyLoggedIn()
         {
+            //OpenBrowser();
             LogIn("willcorreos@gmail.com", "todoisttest");
         }
 
@@ -45,6 +46,7 @@ namespace Todoist_BDD.src.code.test.specflow
         public void ThenIExpectTheProjectToBeDeleted()
         {
             Assert.That(projectsSection.ProjectNameDisplayed(projectName), Is.False, "ERROR! project was not deleted");
+            //CloseBrowser();
         }
     }
 }

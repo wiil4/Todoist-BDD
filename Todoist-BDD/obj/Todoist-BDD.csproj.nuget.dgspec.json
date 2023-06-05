@@ -64,6 +64,10 @@
               "target": "Package",
               "version": "[3.9.74, )"
             },
+            "SpecFlow.Allure": {
+              "target": "Package",
+              "version": "[3.5.0.73, )"
+            },
             "SpecFlow.NUnit": {
               "target": "Package",
               "version": "[3.9.74, )"

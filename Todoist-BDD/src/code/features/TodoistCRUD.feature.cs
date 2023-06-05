@@ -20,8 +20,8 @@ namespace Todoist_BDD.Src.Code.Features
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "3.9.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [NUnit.Framework.TestFixtureAttribute()]
-    [NUnit.Framework.DescriptionAttribute("LogIn")]
-    public partial class LogInFeature
+    [NUnit.Framework.DescriptionAttribute("TodoistCRUD")]
+    public partial class TodoistCRUDFeature
     {
         
         private TechTalk.SpecFlow.ITestRunner testRunner;
@@ -35,7 +35,7 @@ namespace Todoist_BDD.Src.Code.Features
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "src/code/features", "LogIn", "A scenario for testing LogIn feature of todoist\r\nwith valid username and password" +
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "src/code/features", "TodoistCRUD", "A scenario for testing LogIn feature of todoist\r\nwith valid username and password" +
                     "", ProgrammingLanguage.CSharp, featureTags);
             testRunner.OnFeatureStart(featureInfo);
         }
@@ -75,16 +75,16 @@ namespace Todoist_BDD.Src.Code.Features
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("01LogIn")]
-        [NUnit.Framework.CategoryAttribute("logIn")]
+        [NUnit.Framework.DescriptionAttribute("TC01LogIn")]
         [NUnit.Framework.CategoryAttribute("functionality")]
-        public void _01LogIn()
+        [NUnit.Framework.CategoryAttribute("logIn")]
+        public void TC01LogIn()
         {
             string[] tagsOfScenario = new string[] {
-                    "logIn",
-                    "functionality"};
+                    "functionality",
+                    "logIn"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("01LogIn", null, tagsOfScenario, argumentsOfScenario, featureTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("TC01LogIn", null, tagsOfScenario, argumentsOfScenario, featureTags);
 #line 7
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -115,16 +115,16 @@ this.ScenarioInitialize(scenarioInfo);
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("02Project Creation")]
+        [NUnit.Framework.DescriptionAttribute("TC02Project Creation")]
         [NUnit.Framework.CategoryAttribute("project-creation")]
         [NUnit.Framework.CategoryAttribute("functionality")]
-        public void _02ProjectCreation()
+        public void TC02ProjectCreation()
         {
             string[] tagsOfScenario = new string[] {
                     "project-creation",
                     "functionality"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("02Project Creation", null, tagsOfScenario, argumentsOfScenario, featureTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("TC02Project Creation", null, tagsOfScenario, argumentsOfScenario, featureTags);
 #line 16
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -151,23 +151,23 @@ this.ScenarioInitialize(scenarioInfo);
  testRunner.When("I click on Add button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 22
- testRunner.And("I expect project to be displayed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.Then("I expect project to be displayed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("03Updating Project Name")]
+        [NUnit.Framework.DescriptionAttribute("TC03Updating Project Name")]
         [NUnit.Framework.CategoryAttribute("update-project-name")]
         [NUnit.Framework.CategoryAttribute("functionality")]
-        public void _03UpdatingProjectName()
+        public void TC03UpdatingProjectName()
         {
             string[] tagsOfScenario = new string[] {
                     "update-project-name",
                     "functionality"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("03Updating Project Name", null, tagsOfScenario, argumentsOfScenario, featureTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("TC03Updating Project Name", null, tagsOfScenario, argumentsOfScenario, featureTags);
 #line 26
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -201,16 +201,16 @@ this.ScenarioInitialize(scenarioInfo);
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("04Delete Project")]
+        [NUnit.Framework.DescriptionAttribute("TC04Delete Project")]
         [NUnit.Framework.CategoryAttribute("project-deletion")]
         [NUnit.Framework.CategoryAttribute("functionality")]
-        public void _04DeleteProject()
+        public void TC04DeleteProject()
         {
             string[] tagsOfScenario = new string[] {
                     "project-deletion",
                     "functionality"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("04Delete Project", null, tagsOfScenario, argumentsOfScenario, featureTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("TC04Delete Project", null, tagsOfScenario, argumentsOfScenario, featureTags);
 #line 36
 this.ScenarioInitialize(scenarioInfo);
 #line hidden

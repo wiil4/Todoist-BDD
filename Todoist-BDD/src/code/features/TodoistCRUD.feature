@@ -1,10 +1,10 @@
-﻿Feature: LogIn
+﻿Feature: TodoistCRUD
 
 A scenario for testing LogIn feature of todoist
 with valid username and password
 
-@logIn @functionality
-Scenario: 01LogIn
+@functionality @logIn 
+Scenario: TC01LogIn
 	Given A valid email and password
 	| email                 | password    |
 	| willcorreos@gmail.com | todoisttest |
@@ -13,17 +13,17 @@ Scenario: 01LogIn
 
 
 @project-creation @functionality
-Scenario: 02Project Creation
+Scenario: TC02Project Creation
 	Given I am correctly logged in
 	When I navigate to Projects
 	And I try to add a new project with name "MojixProject"
 	Then I expect the Add button to be enabled
 	When I click on Add button
-	And I expect project to be displayed
+	Then I expect project to be displayed
 
 
 @update-project-name @functionality
-Scenario: 03Updating Project Name
+Scenario: TC03Updating Project Name
 	Given I am correctly logged in
 	When I hover on project with name "MojixProject"
 	And I right click on it 
@@ -33,7 +33,7 @@ Scenario: 03Updating Project Name
 
 
 @project-deletion @functionality
-Scenario: 04Delete Project
+Scenario: TC04Delete Project
 	Given I am correctly logged in
 	When I hover on project with name "Mojix2023"
 	And I right click on it
