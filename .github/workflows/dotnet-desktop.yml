@@ -24,8 +24,9 @@ jobs:
         run: |
           LATEST_VERSION=$(curl -sS https://chromedriver.storage.googleapis.com/LATEST_RELEASE)
           wget -O chromedriver.zip https://chromedriver.storage.googleapis.com/${LATEST_VERSION}/chromedriver_linux64.zip
-          unzip chromedriver.zip -d chromedriver
-          chmod +x chromedriver/chromedriver
+          mkdir -p ${{ github.workspace }}/chromedriver
+          unzip chromedriver.zip -d ${{ github.workspace }}/chromedriver
+          chmod +x ${{ github.workspace }}/chromedriver/chromedriver
       - name: Print Working Directory
         run: |
           pwd
@@ -64,5 +65,5 @@ jobs:
       - name: Run Selenium tests
         run: |
           export CHROME_BIN=/usr/bin/chromium-browser
-          export CHROME_DRIVER_PATH=./chromedriver/chromedriver
+          export CHROME_DRIVER_PATH=${{ github.workspace }}/chromedriver/chromedriver
           dotnet test
