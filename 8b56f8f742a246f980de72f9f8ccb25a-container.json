@@ -1,0 +1,43 @@
+{
+  "uuid": "776ea1141e4548d2bf1260ee1d4101f7",
+  "children": [
+    "30ed9227ec0446109ef737f729281ad2"
+  ],
+  "befores": [
+    {
+      "name": "OpenBrowser [10000]",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1686063923187,
+      "stop": 1686063923274
+    }
+  ],
+  "afters": [
+    {
+      "name": "CloseBrowser [10000]",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1686063923321,
+      "stop": 1686063923323
+    }
+  ],
+  "links": [],
+  "start": 1686063923186,
+  "stop": 1686063923387
+}

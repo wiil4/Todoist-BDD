@@ -1,0 +1,134 @@
+{
+  "uuid": "e87fb5c065954dc28c7901e56f53d0e7",
+  "historyId": "TC04Delete Project",
+  "fullName": "TC04Delete Project",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "fv-az339-18"
+    },
+    {
+      "name": "feature",
+      "value": "TodoistCRUD"
+    },
+    {
+      "name": "tag",
+      "value": "project-deletion"
+    },
+    {
+      "name": "tag",
+      "value": "functionality"
+    }
+  ],
+  "links": [],
+  "name": "TC04Delete Project",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "Unable to locate driver with path: /home/runner/work/Todoist-BDD/Todoist-BDD/chromedriver/chromedriver/chromedriver, for more information on how to install drivers see https://www.selenium.dev/documentation/webdriver/getting_started/install_drivers/ -> No process is associated with this object.",
+    "trace": "OpenQA.Selenium.WebDriverException: Unable to locate driver with path: /home/runner/work/Todoist-BDD/Todoist-BDD/chromedriver/chromedriver/chromedriver, for more information on how to install drivers see https://www.selenium.dev/documentation/webdriver/getting_started/install_drivers/\n ---> System.InvalidOperationException: No process is associated with this object.\n   at System.Diagnostics.Process.EnsureState(State state)\n   at System.Diagnostics.Process.get_HasExited()\n   at System.Diagnostics.Process.EnsureState(State state)\n   at System.Diagnostics.Process.get_ExitCode()\n   at OpenQA.Selenium.SeleniumManager.RunCommand(String fileName, String arguments)\n   at OpenQA.Selenium.SeleniumManager.DriverPath(DriverOptions options)\n   at OpenQA.Selenium.DriverFinder.VerifyDriverServicePath(DriverService service, DriverOptions options)\n   --- End of inner exception stack trace ---\n   at OpenQA.Selenium.DriverFinder.VerifyDriverServicePath(DriverService service, DriverOptions options)\n   at OpenQA.Selenium.Chromium.ChromiumDriver..ctor(ChromiumDriverService service, ChromiumOptions options, TimeSpan commandTimeout)\n   at OpenQA.Selenium.Chrome.ChromeDriver..ctor(ChromeDriverService service, ChromeOptions options, TimeSpan commandTimeout)\n   at OpenQA.Selenium.Chrome.ChromeDriver..ctor(String chromeDriverDirectory, ChromeOptions options, TimeSpan commandTimeout)\n   at OpenQA.Selenium.Chrome.ChromeDriver..ctor(String chromeDriverDirectory, ChromeOptions options)\n   at Todoist_BDD.src.code.factoryBrowser.Chrome.Create() in /home/runner/work/Todoist-BDD/Todoist-BDD/Todoist-BDD/src/code/factoryBrowser/Chrome.cs:line 21\n   at Todoist_BDD.src.code.session.Session..ctor() in /home/runner/work/Todoist-BDD/Todoist-BDD/Todoist-BDD/src/code/session/Session.cs:line 20\n   at Todoist_BDD.src.code.session.Session.Instance() in /home/runner/work/Todoist-BDD/Todoist-BDD/Todoist-BDD/src/code/session/Session.cs:line 27\n   at Todoist_BDD.src.code.test.specflow.BaseSteps.CloseBrowser() in /home/runner/work/Todoist-BDD/Todoist-BDD/Todoist-BDD/src/code/test/specflow/BaseSteps.cs:line 30\n   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)\n   at Allure.SpecFlowPlugin.AllureBindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Given  I am correctly logged in",
+      "status": "skipped",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1686063923355,
+      "stop": 1686063923355
+    },
+    {
+      "name": "When  I hover on project with name \"Mojix2023\"",
+      "status": "skipped",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1686063923355,
+      "stop": 1686063923355
+    },
+    {
+      "name": "And  I right click on it",
+      "status": "skipped",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1686063923355,
+      "stop": 1686063923355
+    },
+    {
+      "name": "And  I click on delete project button",
+      "status": "skipped",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1686063923355,
+      "stop": 1686063923355
+    },
+    {
+      "name": "And  I confirm the project deletion",
+      "status": "skipped",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1686063923355,
+      "stop": 1686063923355
+    },
+    {
+      "name": "Then  I expect the project to be deleted",
+      "status": "skipped",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1686063923355,
+      "stop": 1686063923355
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1686063923355,
+  "stop": 1686063923356
+}
