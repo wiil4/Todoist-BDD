@@ -1,0 +1,95 @@
+{
+  "uuid": "c8929f27fb3c4b0a827c72743edfb2f8",
+  "historyId": "TC01LogIn",
+  "fullName": "TC01LogIn",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "fv-az576-576"
+    },
+    {
+      "name": "feature",
+      "value": "TodoistCRUD"
+    },
+    {
+      "name": "tag",
+      "value": "functionality"
+    },
+    {
+      "name": "tag",
+      "value": "logIn"
+    }
+  ],
+  "links": [],
+  "name": "TC01LogIn",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "  Error! Log In was not successful!\n  Expected: True\n  But was:  False\n",
+    "trace": "NUnit.Framework.AssertionException:   Error! Log In was not successful!\n  Expected: True\n  But was:  False\n\n   at NUnit.Framework.Assert.ReportFailure(String message)\n   at NUnit.Framework.Assert.ReportFailure(ConstraintResult result, String message, Object[] args)\n   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)\n   at NUnit.Framework.Assert.IsTrue(Boolean condition, String message, Object[] args)\n   at Todoist_BDD.src.code.test.specflow.LogInStepDefinitions.ThenIExpectToBeSuccessfullyLogedIn() in /home/runner/work/Todoist-BDD/Todoist-BDD/Todoist-BDD/src/code/test/specflow/LogInStepDefinitions.cs:line 30\n   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)\n   at Allure.SpecFlowPlugin.AllureBindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)\n   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments, TimeSpan& duration)\n   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Given  A valid email and password",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "table",
+          "source": "b65e0969c0144b8d8579bce49381bb07-attachment.csv",
+          "type": "text/csv"
+        }
+      ],
+      "parameters": [],
+      "start": 1686083083641,
+      "stop": 1686083087261
+    },
+    {
+      "name": "When  I try to logIn",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1686083087261,
+      "stop": 1686083088157
+    },
+    {
+      "name": "Then  I expect to be successfully LogedIn",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1686083088157,
+      "stop": 1686083098310
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1686083083630,
+  "stop": 1686083098314
+}
