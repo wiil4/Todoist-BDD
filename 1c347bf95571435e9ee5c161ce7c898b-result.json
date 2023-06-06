@@ -1,0 +1,134 @@
+{
+  "uuid": "2cd35e5076e9417a86956c5e08416f48",
+  "historyId": "TC02Project Creation",
+  "fullName": "TC02Project Creation",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "fv-az593-404"
+    },
+    {
+      "name": "feature",
+      "value": "TodoistCRUD"
+    },
+    {
+      "name": "tag",
+      "value": "project-creation"
+    },
+    {
+      "name": "tag",
+      "value": "functionality"
+    }
+  ],
+  "links": [],
+  "name": "TC02Project Creation",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "element click intercepted: Element <a class=\"_2a3b75a1 _509a57b4 e5a9206f _50ba6b6b _4a93668a f6342c26\" href=\"/app/projects\">...</a> is not clickable at point (126, 244). Other element would receive the click: <div class=\"GB_overlay\" style=\"z-index: 995; opacity: 0.8; width: 100%; height: 1080px;\"></div>\n  (Session info: headless chrome=114.0.5735.106)",
+    "trace": "OpenQA.Selenium.ElementClickInterceptedException: element click intercepted: Element <a class=\"_2a3b75a1 _509a57b4 e5a9206f _50ba6b6b _4a93668a f6342c26\" href=\"/app/projects\">...</a> is not clickable at point (126, 244). Other element would receive the click: <div class=\"GB_overlay\" style=\"z-index: 995; opacity: 0.8; width: 100%; height: 1080px;\"></div>\n  (Session info: headless chrome=114.0.5735.106)\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebElement.Execute(String commandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebElement.Click()\n   at Todoist_BDD.src.code.control.Control.Click() in /home/runner/work/Todoist-BDD/Todoist-BDD/Todoist-BDD/src/code/control/Control.cs:line 29\n   at Todoist_BDD.src.code.test.specflow.CreateProjectStepDefinitions.WhenINavigateToProjects() in /home/runner/work/Todoist-BDD/Todoist-BDD/Todoist-BDD/src/code/test/specflow/CreateProjectStepDefinitions.cs:line 62\n   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)\n   at Allure.SpecFlowPlugin.AllureBindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)\n   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments, TimeSpan& duration)\n   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Given  I am correctly logged in",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1686082439191,
+      "stop": 1686082444042
+    },
+    {
+      "name": "When  I navigate to Projects",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1686082444042,
+      "stop": 1686082456175
+    },
+    {
+      "name": "And  I try to add a new project with name \"MojixProject\"",
+      "status": "skipped",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1686082456176,
+      "stop": 1686082456177
+    },
+    {
+      "name": "Then  I expect the Add button to be enabled",
+      "status": "skipped",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1686082456179,
+      "stop": 1686082456180
+    },
+    {
+      "name": "When  I click on Add button",
+      "status": "skipped",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1686082456180,
+      "stop": 1686082456180
+    },
+    {
+      "name": "Then  I expect project to be displayed",
+      "status": "skipped",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1686082456180,
+      "stop": 1686082456180
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1686082439191,
+  "stop": 1686082456183
+}
