@@ -20,6 +20,7 @@ namespace Todoist_BDD.src.code.test.specflow
         [When(@"I navigate to Projects")]
         public void WhenINavigateToProjects()
         {
+            RemoveOverlay();
             projectsSection.projectsButton.Click();            
             projectsSection.addProjectButton.Click();
             Thread.Sleep(1000);
