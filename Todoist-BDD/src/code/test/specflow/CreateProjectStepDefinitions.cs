@@ -20,46 +20,9 @@ namespace Todoist_BDD.src.code.test.specflow
         [When(@"I navigate to Projects")]
         public void WhenINavigateToProjects()
         {
-            IWebDriver driver = Session.Instance().GetBrowser();
-            WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
-
-            // Define the condition function
-            Func<IWebDriver, bool> overlayCondition = (d) =>
-            {
-                try
-                {
-                    // Locate the overlay element
-                    IWebElement overlay = driver.FindElement(By.CssSelector("div.GB_overlay"));
-                    // Check if the overlay element is visible or not present
-                    return !overlay.Displayed;
-                }
-                catch (NoSuchElementException)
-                {
-                    // If the overlay element is not found, consider it as not present
-                    return true;
-                }
-            };
-
-            // Wait until the condition is met
-            wait.Until(overlayCondition);
-
-            // Wait for the projects button to become clickable
-            wait.Until((d) =>
-            {
-                try
-                {
-                    // Check if the projects button is clickable
-                    return projectsSection.projectsButton.IsEnabled() && projectsSection.projectsButton.IsControlDisplayed();
-                }
-                catch (StaleElementReferenceException)
-                {
-                    // If the projects button is no longer attached to the DOM, consider it as not clickable
-                    return false;
-                }
-            });
-
-
+            Thread.Sleep(5000);
             projectsSection.projectsButton.Click();
+            Thread.Sleep(5000);
             projectsSection.addProjectButton.Click();
             Thread.Sleep(1000);
 
