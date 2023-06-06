@@ -17,7 +17,8 @@ namespace Todoist_BDD.src.code.factoryBrowser
             //locally
             //string chromeDriverPath = Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.FullName;
             var chromeOptions = new ChromeOptions();
-            chromeOptions.AddArgument("--start-maximized");
+            chromeOptions.AddArgument("start-maximized");
+            chromeOptions.AddArgument("--disable-gpu");
             chromeOptions.AddArgument("--headless");
             //chromeOptions.AddArgument("--window-size=1366,768");
             //chromeOptions.AddArgument("--no-sandbox");
