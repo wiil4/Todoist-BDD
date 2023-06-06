@@ -1,0 +1,134 @@
+{
+  "uuid": "b68a30d3c6b642d483c879c7343b968e",
+  "historyId": "TC02Project Creation",
+  "fullName": "TC02Project Creation",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "fv-az450-793"
+    },
+    {
+      "name": "feature",
+      "value": "TodoistCRUD"
+    },
+    {
+      "name": "tag",
+      "value": "project-creation"
+    },
+    {
+      "name": "tag",
+      "value": "functionality"
+    }
+  ],
+  "links": [],
+  "name": "TC02Project Creation",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "Unable to locate driver with path: /home/runner/work/Todoist-BDD/Todoist-BDD/Todoist-BDD/src/resources/chromedriver.exe/chromedriver, for more information on how to install drivers see https://www.selenium.dev/documentation/webdriver/getting_started/install_drivers/ -> No process is associated with this object.",
+    "trace": "OpenQA.Selenium.WebDriverException: Unable to locate driver with path: /home/runner/work/Todoist-BDD/Todoist-BDD/Todoist-BDD/src/resources/chromedriver.exe/chromedriver, for more information on how to install drivers see https://www.selenium.dev/documentation/webdriver/getting_started/install_drivers/\n ---> System.InvalidOperationException: No process is associated with this object.\n   at System.Diagnostics.Process.EnsureState(State state)\n   at System.Diagnostics.Process.get_HasExited()\n   at System.Diagnostics.Process.EnsureState(State state)\n   at System.Diagnostics.Process.get_ExitCode()\n   at OpenQA.Selenium.SeleniumManager.RunCommand(String fileName, String arguments)\n   at OpenQA.Selenium.SeleniumManager.DriverPath(DriverOptions options)\n   at OpenQA.Selenium.DriverFinder.VerifyDriverServicePath(DriverService service, DriverOptions options)\n   --- End of inner exception stack trace ---\n   at OpenQA.Selenium.DriverFinder.VerifyDriverServicePath(DriverService service, DriverOptions options)\n   at OpenQA.Selenium.Chromium.ChromiumDriver..ctor(ChromiumDriverService service, ChromiumOptions options, TimeSpan commandTimeout)\n   at OpenQA.Selenium.Chrome.ChromeDriver..ctor(ChromeDriverService service, ChromeOptions options, TimeSpan commandTimeout)\n   at OpenQA.Selenium.Chrome.ChromeDriver..ctor(String chromeDriverDirectory, ChromeOptions options, TimeSpan commandTimeout)\n   at OpenQA.Selenium.Chrome.ChromeDriver..ctor(String chromeDriverDirectory, ChromeOptions options)\n   at OpenQA.Selenium.Chrome.ChromeDriver..ctor(String chromeDriverDirectory)\n   at Todoist_BDD.src.code.factoryBrowser.Chrome.Create() in /home/runner/work/Todoist-BDD/Todoist-BDD/Todoist-BDD/src/code/factoryBrowser/Chrome.cs:line 16\n   at Todoist_BDD.src.code.session.Session..ctor() in /home/runner/work/Todoist-BDD/Todoist-BDD/Todoist-BDD/src/code/session/Session.cs:line 20\n   at Todoist_BDD.src.code.session.Session.Instance() in /home/runner/work/Todoist-BDD/Todoist-BDD/Todoist-BDD/src/code/session/Session.cs:line 27\n   at Todoist_BDD.src.code.test.specflow.BaseSteps.CloseBrowser() in /home/runner/work/Todoist-BDD/Todoist-BDD/Todoist-BDD/src/code/test/specflow/BaseSteps.cs:line 30\n   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)\n   at Allure.SpecFlowPlugin.AllureBindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Given  I am correctly logged in",
+      "status": "skipped",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1686061092901,
+      "stop": 1686061092901
+    },
+    {
+      "name": "When  I navigate to Projects",
+      "status": "skipped",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1686061092901,
+      "stop": 1686061092901
+    },
+    {
+      "name": "And  I try to add a new project with name \"MojixProject\"",
+      "status": "skipped",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1686061092902,
+      "stop": 1686061092902
+    },
+    {
+      "name": "Then  I expect the Add button to be enabled",
+      "status": "skipped",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1686061092902,
+      "stop": 1686061092902
+    },
+    {
+      "name": "When  I click on Add button",
+      "status": "skipped",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1686061092902,
+      "stop": 1686061092902
+    },
+    {
+      "name": "Then  I expect project to be displayed",
+      "status": "skipped",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1686061092902,
+      "stop": 1686061092902
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1686061092901,
+  "stop": 1686061092902
+}
