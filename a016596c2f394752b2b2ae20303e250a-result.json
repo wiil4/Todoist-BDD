@@ -1,0 +1,134 @@
+{
+  "uuid": "0269f3d53b9343778c9cc5f8d1f4bdf8",
+  "historyId": "TC03Updating Project Name",
+  "fullName": "TC03Updating Project Name",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "fv-az364-608"
+    },
+    {
+      "name": "feature",
+      "value": "TodoistCRUD"
+    },
+    {
+      "name": "tag",
+      "value": "update-project-name"
+    },
+    {
+      "name": "tag",
+      "value": "functionality"
+    }
+  ],
+  "links": [],
+  "name": "TC03Updating Project Name",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//li/a[contains(@href,'login')]\"}\n  (Session info: headless chrome=114.0.5735.106)",
+    "trace": "OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//li/a[contains(@href,'login')]\"}\n  (Session info: headless chrome=114.0.5735.106)\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.FindElement(String mechanism, String value)\n   at OpenQA.Selenium.By.<.ctor>b__11_0(ISearchContext context)\n   at OpenQA.Selenium.By.FindElement(ISearchContext context)\n   at OpenQA.Selenium.WebDriver.FindElement(By by)\n   at Todoist_BDD.src.code.control.Control.FindControl() in /home/runner/work/Todoist-BDD/Todoist-BDD/Todoist-BDD/src/code/control/Control.cs:line 23\n   at Todoist_BDD.src.code.control.Control.Click() in /home/runner/work/Todoist-BDD/Todoist-BDD/Todoist-BDD/src/code/control/Control.cs:line 28\n   at Todoist_BDD.src.code.test.specflow.BaseSteps.LogIn(String email, String password) in /home/runner/work/Todoist-BDD/Todoist-BDD/Todoist-BDD/src/code/test/specflow/BaseSteps.cs:line 17\n   at Todoist_BDD.src.code.test.specflow.UpdateProjectNameStepDefinitions.GivenIAmCorrectlyLoggedIn() in /home/runner/work/Todoist-BDD/Todoist-BDD/Todoist-BDD/src/code/test/specflow/UpdateProjectNameStepDefinitions.cs:line 16\n   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)\n   at Allure.SpecFlowPlugin.AllureBindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)\n   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments, TimeSpan& duration)\n   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Given  I am correctly logged in",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1686082678981,
+      "stop": 1686082690881
+    },
+    {
+      "name": "When  I hover on project with name \"MojixProject\"",
+      "status": "skipped",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1686082690881,
+      "stop": 1686082690882
+    },
+    {
+      "name": "And  I right click on it",
+      "status": "skipped",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1686082690882,
+      "stop": 1686082690882
+    },
+    {
+      "name": "And  I click on edit project button",
+      "status": "skipped",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1686082690882,
+      "stop": 1686082690882
+    },
+    {
+      "name": "And  I change the project name to \"Mojix2023\"",
+      "status": "skipped",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1686082690882,
+      "stop": 1686082690882
+    },
+    {
+      "name": "Then  I expect the project name changed in projects list",
+      "status": "skipped",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1686082690882,
+      "stop": 1686082690882
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1686082678981,
+  "stop": 1686082690882
+}
