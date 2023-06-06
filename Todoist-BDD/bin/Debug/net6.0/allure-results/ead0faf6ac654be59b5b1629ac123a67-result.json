@@ -1,0 +1,93 @@
+{
+  "uuid": "d3586bbf0f3a46c79716c5b2e9c5156b",
+  "historyId": "TC01LogIn",
+  "fullName": "TC01LogIn",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-4S814UH"
+    },
+    {
+      "name": "feature",
+      "value": "TodoistCRUD"
+    },
+    {
+      "name": "tag",
+      "value": "functionality"
+    },
+    {
+      "name": "tag",
+      "value": "logIn"
+    }
+  ],
+  "links": [],
+  "name": "TC01LogIn",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Given  A valid email and password",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "table",
+          "source": "dfdc9e0cbb9e46ebb843ca7ed25b0ed9-attachment.csv",
+          "type": "text/csv"
+        }
+      ],
+      "parameters": [],
+      "start": 1686079293702,
+      "stop": 1686079300627
+    },
+    {
+      "name": "When  I try to logIn",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1686079300627,
+      "stop": 1686079302949
+    },
+    {
+      "name": "Then  I expect to be successfully LogedIn",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1686079302949,
+      "stop": 1686079316420
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1686079293696,
+  "stop": 1686079316421
+}

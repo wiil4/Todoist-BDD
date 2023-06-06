@@ -11,7 +11,8 @@ namespace Todoist_BDD.src.code.page
     public class ProjectsSection
     {
         //CREATE PROJECT
-        public Button projectsButton = new Button(By.XPath("//div[@id='left_menu_inner']//a[contains(@href,'projects')]"));
+        //public Button projectsButton = new Button(By.XPath("//div[@id='left_menu_inner']//a[contains(@href,'projects')]"));
+        public Button projectsButton = new Button(By.XPath("//div[@id='left_menu_inner']/div//a[1]"));
         public Button addProjectButton = new Button(By.XPath("(//div[@id='left_menu_inner']//div/button)[1]"));
         public TextBox projectNameTxtbox = new TextBox(By.Id("edit_project_modal_field_name"));
         public Button submitButton = new Button(By.XPath("//form//button[@type='submit']"));
