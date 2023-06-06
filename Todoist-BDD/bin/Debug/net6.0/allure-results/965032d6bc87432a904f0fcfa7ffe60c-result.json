@@ -1,0 +1,134 @@
+{
+  "uuid": "a4ec5b452a3149ca9d52be67662ab088",
+  "historyId": "TC04Delete Project",
+  "fullName": "TC04Delete Project",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-4S814UH"
+    },
+    {
+      "name": "feature",
+      "value": "TodoistCRUD"
+    },
+    {
+      "name": "tag",
+      "value": "project-deletion"
+    },
+    {
+      "name": "tag",
+      "value": "functionality"
+    }
+  ],
+  "links": [],
+  "name": "TC04Delete Project",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"(//ul[@id='projects_list']/li//span[text()='Mojix2023'])[last()]\"}\n  (Session info: chrome=113.0.5672.129)",
+    "trace": "OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"(//ul[@id='projects_list']/li//span[text()='Mojix2023'])[last()]\"}\n  (Session info: chrome=113.0.5672.129)\r\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\r\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.WebDriver.FindElement(String mechanism, String value)\r\n   at OpenQA.Selenium.By.<.ctor>b__11_0(ISearchContext context)\r\n   at OpenQA.Selenium.By.FindElement(ISearchContext context)\r\n   at OpenQA.Selenium.WebDriver.FindElement(By by)\r\n   at Todoist_BDD.src.code.control.Control.FindControl() in D:\\QABootcamp\\Todoist-BDD\\Todoist-BDD\\src\\code\\control\\Control.cs:line 23\r\n   at Todoist_BDD.src.code.control.Button.HoverOnButton() in D:\\QABootcamp\\Todoist-BDD\\Todoist-BDD\\src\\code\\control\\Button.cs:line 29\r\n   at Todoist_BDD.src.code.page.ProjectsSection.HoverOnCreatedProject(String pjName) in D:\\QABootcamp\\Todoist-BDD\\Todoist-BDD\\src\\code\\page\\ProjectsSection.cs:line 29\r\n   at Todoist_BDD.src.code.test.specflow.ZDeleteProjectStepDefinitions.WhenIHoverOnProjectWithName(String projectName) in D:\\QABootcamp\\Todoist-BDD\\Todoist-BDD\\src\\code\\test\\specflow\\DeleteProjectStepDefinitions.cs:line 23\r\n   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)\r\n   at Allure.SpecFlowPlugin.AllureBindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)\r\n   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments, TimeSpan& duration)\r\n   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Given  I am correctly logged in",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1686064895953,
+      "stop": 1686064898724
+    },
+    {
+      "name": "When  I hover on project with name \"Mojix2023\"",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1686064898724,
+      "stop": 1686064918789
+    },
+    {
+      "name": "And  I right click on it",
+      "status": "skipped",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1686064918790,
+      "stop": 1686064918791
+    },
+    {
+      "name": "And  I click on delete project button",
+      "status": "skipped",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1686064918792,
+      "stop": 1686064918792
+    },
+    {
+      "name": "And  I confirm the project deletion",
+      "status": "skipped",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1686064918792,
+      "stop": 1686064918792
+    },
+    {
+      "name": "Then  I expect the project to be deleted",
+      "status": "skipped",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1686064918792,
+      "stop": 1686064918792
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1686064895953,
+  "stop": 1686064918794
+}

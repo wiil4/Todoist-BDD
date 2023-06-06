@@ -5,14 +5,14 @@ namespace Todoist_BDD.src.code.test.specflow
 {
     [Binding]
     [Scope(Tag = "project-deletion")]
-    public class ZDeleteProjectStepDefinitions : BaseSteps
+    public class DeleteProjectStepDefinitions : BaseSteps
     {
         string projectName = string.Empty;
 
         [Given(@"I am correctly logged in")]
         public void GivenIAmCorrectlyLoggedIn()
         {
-            //OpenBrowser();
+            OpenBrowser();
             LogIn("willcorreos@gmail.com", "todoisttest");
         }
 
@@ -46,7 +46,7 @@ namespace Todoist_BDD.src.code.test.specflow
         public void ThenIExpectTheProjectToBeDeleted()
         {
             Assert.That(projectsSection.ProjectNameDisplayed(projectName), Is.False, "ERROR! project was not deleted");
-            //CloseBrowser();
+            CloseBrowser();
         }
     }
 }

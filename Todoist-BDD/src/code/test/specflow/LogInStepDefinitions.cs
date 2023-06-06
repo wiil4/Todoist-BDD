@@ -14,7 +14,7 @@ namespace Todoist_BDD.src.code.test.specflow
         [Given(@"A valid email and password")]
         public void GivenAValidEmailAndPassword(Table table)
         {
-            //OpenBrowser();
+            OpenBrowser();
             logInData = table.CreateInstance<LogInData>();
         }
 
@@ -28,7 +28,7 @@ namespace Todoist_BDD.src.code.test.specflow
         public void ThenIExpectToBeSuccessfullyLogedIn()
         {
             Assert.IsTrue(logInPage.IsInboxDisplayed(), "Error! Log In was not successful!");
-            //CloseBrowser();
+            CloseBrowser();
         }
     }
 }

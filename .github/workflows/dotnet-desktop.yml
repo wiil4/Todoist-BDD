@@ -24,13 +24,15 @@ jobs:
         run: |
           LATEST_VERSION=$(curl -sS https://chromedriver.storage.googleapis.com/LATEST_RELEASE)
           wget -O chromedriver.zip https://chromedriver.storage.googleapis.com/${LATEST_VERSION}/chromedriver_linux64.zip
-          mkdir -p ${{ github.workspace }}/chromedriver
-          unzip chromedriver.zip -d ${{ github.workspace }}/chromedriver
-          chmod +x ${{ github.workspace }}/chromedriver/chromedriver
+          unzip chromedriver.zip -d chromedriver
+          chmod +x chromedriver/chromedriver
       - name: Print Working Directory
         run: |
           pwd
           ls -al
+      - name: Print ChromeDriver path
+        run: |
+          echo "ChromeDriver path: ./chromedriver/chromedriver"
       - name: Install dependencies
         run: dotnet restore
       - name: Build

@@ -18,13 +18,11 @@ namespace Todoist_BDD.src.code.test.specflow
             logInPage.LogIn(email, password);
         }
 
-        [BeforeScenario]
         public void OpenBrowser()
         {
             Session.Instance().GetBrowser().Navigate().GoToUrl("https://todoist.com/");
         }
 
-        [AfterScenario]
         public void CloseBrowser()
         {
             Session.Instance().CloseBrowser();

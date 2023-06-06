@@ -12,7 +12,7 @@ namespace Todoist_BDD.src.code.test.specflow
         [Given(@"I am correctly logged in")]
         public void GivenIAmCorrectlyLoggedIn()
         {
-            //OpenBrowser();
+            OpenBrowser();
             LogIn("willcorreos@gmail.com", "todoisttest");
         }
 
@@ -48,7 +48,7 @@ namespace Todoist_BDD.src.code.test.specflow
         public void ThenIExpectTheProjectNameChangedInProjectsList()
         {
             Assert.That(projectsSection.ProjectNameDisplayed(newProjectName), Is.True, "Error! project name was not changed");
-            //CloseBrowser(); 
+            CloseBrowser(); 
         }
     }
 }
