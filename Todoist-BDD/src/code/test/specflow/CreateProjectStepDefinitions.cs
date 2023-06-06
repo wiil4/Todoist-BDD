@@ -1,5 +1,8 @@
+using OpenQA.Selenium;
+using OpenQA.Selenium.Support.UI;
 using System;
 using TechTalk.SpecFlow;
+using Todoist_BDD.src.code.session;
 
 namespace Todoist_BDD.src.code.test.specflow
 {
@@ -17,6 +20,27 @@ namespace Todoist_BDD.src.code.test.specflow
         [When(@"I navigate to Projects")]
         public void WhenINavigateToProjects()
         {
+            WebDriverWait wait = new WebDriverWait(Session.Instance().GetBrowser(), TimeSpan.FromSeconds(10));
+
+            // Define the condition function
+            Func<IWebDriver, bool> overlayCondition = (d) =>
+            {
+                try
+                {
+                    // Locate the overlay element
+                    IWebElement overlay = Session.Instance().GetBrowser().FindElement(By.CssSelector("div.GB_overlay"));
+                    // Check if the overlay element is visible or not present
+                    return !overlay.Displayed;
+                }
+                catch (NoSuchElementException)
+                {
+                    // If the overlay element is not found, consider it as not present
+                    return true;
+                }
+            };
+
+            // Wait until the condition is met
+            wait.Until(overlayCondition);
             projectsSection.projectsButton.Click();
             projectsSection.addProjectButton.Click();
             Thread.Sleep(1000);
