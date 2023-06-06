@@ -2,11 +2,11 @@
 
 Todoist-BDD is a C# project that utilizes Selenium and SpecFlow for behavior-driven development. It also generates an Allure report.
 
-##Allure report page
+## Allure report page
 The Allure report for this project can be accessed at the following URL:
 - [Todoist-BDD Allure Report](https://wiil4.github.io/Todoist-BDD/)
 
-##About the functionality:
+## About the functionality:
 1. Update and Delete test cases are not currently working as CI due to unreachable elements:
   - To update an element, it is necessary to open a pop-up menu by right-clicking on the created project, but that pop-up menu is just reachable in some situations.
 
@@ -52,4 +52,10 @@ public class Chrome : IBrowser
 ```
 This is because when it was being tested through git hub actions, it detected that something was overlaying the projects button and it was necessary to remove that overlay in order to click the button
 
+## Tested Features
 
+Tests cases where executed in this order as update depends on created project and delete depends on updated project with name specified in that test case:
+- LogIn with valid credentials
+- Creating a new project
+- Updating project name
+- Removing project
