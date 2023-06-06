@@ -1,0 +1,134 @@
+{
+  "uuid": "3f486a3fa248410e8b22aa1fbd340b9c",
+  "historyId": "TC02Project Creation",
+  "fullName": "TC02Project Creation",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "fv-az216-758"
+    },
+    {
+      "name": "feature",
+      "value": "TodoistCRUD"
+    },
+    {
+      "name": "tag",
+      "value": "project-creation"
+    },
+    {
+      "name": "tag",
+      "value": "functionality"
+    }
+  ],
+  "links": [],
+  "name": "TC02Project Creation",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "element not interactable\n  (Session info: headless chrome=114.0.5735.106)",
+    "trace": "OpenQA.Selenium.ElementNotInteractableException: element not interactable\n  (Session info: headless chrome=114.0.5735.106)\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebElement.Execute(String commandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebElement.Click()\n   at Todoist_BDD.src.code.control.Control.Click() in /home/runner/work/Todoist-BDD/Todoist-BDD/Todoist-BDD/src/code/control/Control.cs:line 29\n   at Todoist_BDD.src.code.test.specflow.BaseSteps.LogIn(String email, String password) in /home/runner/work/Todoist-BDD/Todoist-BDD/Todoist-BDD/src/code/test/specflow/BaseSteps.cs:line 17\n   at Todoist_BDD.src.code.test.specflow.CreateProjectStepDefinitions.GivenIAmCorrectlyLoggedIn() in /home/runner/work/Todoist-BDD/Todoist-BDD/Todoist-BDD/src/code/test/specflow/CreateProjectStepDefinitions.cs:line 14\n   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)\n   at Allure.SpecFlowPlugin.AllureBindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)\n   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments, TimeSpan& duration)\n   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Given  I am correctly logged in",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1686069538437,
+      "stop": 1686069564441
+    },
+    {
+      "name": "When  I navigate to Projects",
+      "status": "skipped",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1686069564442,
+      "stop": 1686069564442
+    },
+    {
+      "name": "And  I try to add a new project with name \"MojixProject\"",
+      "status": "skipped",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1686069564443,
+      "stop": 1686069564443
+    },
+    {
+      "name": "Then  I expect the Add button to be enabled",
+      "status": "skipped",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1686069564443,
+      "stop": 1686069564443
+    },
+    {
+      "name": "When  I click on Add button",
+      "status": "skipped",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1686069564443,
+      "stop": 1686069564443
+    },
+    {
+      "name": "Then  I expect project to be displayed",
+      "status": "skipped",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1686069564443,
+      "stop": 1686069564443
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1686069538437,
+  "stop": 1686069564444
+}
