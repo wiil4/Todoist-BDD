@@ -17,8 +17,9 @@ namespace Todoist_BDD.src.code.factoryBrowser
             //locally
             //string chromeDriverPath = Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.FullName;
             var chromeOptions = new ChromeOptions();
+            chromeOptions.AddArgument("--start-maximized");
             chromeOptions.AddArgument("--headless");
-            chromeOptions.AddArgument("--window-size=1920,1080");
+            //chromeOptions.AddArgument("--window-size=1366,768");
             //chromeOptions.AddArgument("--no-sandbox");
             IWebDriver driver = new ChromeDriver(chromeDriverPath, chromeOptions);
 
