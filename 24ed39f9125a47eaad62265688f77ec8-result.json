@@ -1,0 +1,134 @@
+{
+  "uuid": "fbd009bb7ac841c695f0c34bf41f9081",
+  "historyId": "TC02Project Creation",
+  "fullName": "TC02Project Creation",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "fv-az244-179"
+    },
+    {
+      "name": "feature",
+      "value": "TodoistCRUD"
+    },
+    {
+      "name": "tag",
+      "value": "project-creation"
+    },
+    {
+      "name": "tag",
+      "value": "functionality"
+    }
+  ],
+  "links": [],
+  "name": "TC02Project Creation",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "Argument is of an illegal typeTodoist_BDD.src.code.control.Button (Parameter 'arg')",
+    "trace": "System.ArgumentException: Argument is of an illegal typeTodoist_BDD.src.code.control.Button (Parameter 'arg')\n   at OpenQA.Selenium.WebDriver.ConvertObjectToJavaScriptObject(Object arg)\n   at OpenQA.Selenium.WebDriver.ConvertArgumentsToJavaScriptObjects(Object[] args)\n   at OpenQA.Selenium.WebDriver.ExecuteScriptCommand(String script, String commandName, Object[] args)\n   at OpenQA.Selenium.WebDriver.ExecuteScript(String script, Object[] args)\n   at Todoist_BDD.src.code.test.specflow.CreateProjectStepDefinitions.WhenINavigateToProjects() in /home/runner/work/Todoist-BDD/Todoist-BDD/Todoist-BDD/src/code/test/specflow/CreateProjectStepDefinitions.cs:line 24\n   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)\n   at Allure.SpecFlowPlugin.AllureBindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)\n   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments, TimeSpan& duration)\n   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Given  I am correctly logged in",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1686083809606,
+      "stop": 1686083813629
+    },
+    {
+      "name": "When  I navigate to Projects",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1686083813629,
+      "stop": 1686083813665
+    },
+    {
+      "name": "And  I try to add a new project with name \"MojixProject\"",
+      "status": "skipped",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1686083813666,
+      "stop": 1686083813667
+    },
+    {
+      "name": "Then  I expect the Add button to be enabled",
+      "status": "skipped",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1686083813669,
+      "stop": 1686083813670
+    },
+    {
+      "name": "When  I click on Add button",
+      "status": "skipped",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1686083813670,
+      "stop": 1686083813670
+    },
+    {
+      "name": "Then  I expect project to be displayed",
+      "status": "skipped",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1686083813670,
+      "stop": 1686083813670
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1686083809606,
+  "stop": 1686083813673
+}
