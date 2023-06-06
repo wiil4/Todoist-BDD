@@ -1,0 +1,95 @@
+{
+  "uuid": "53ddaa7f11544cc3ba15c1f5b1c62021",
+  "historyId": "TC01LogIn",
+  "fullName": "TC01LogIn",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "fv-az551-54"
+    },
+    {
+      "name": "feature",
+      "value": "TodoistCRUD"
+    },
+    {
+      "name": "tag",
+      "value": "functionality"
+    },
+    {
+      "name": "tag",
+      "value": "logIn"
+    }
+  ],
+  "links": [],
+  "name": "TC01LogIn",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "element not interactable\n  (Session info: headless chrome=114.0.5735.106)",
+    "trace": "OpenQA.Selenium.ElementNotInteractableException: element not interactable\n  (Session info: headless chrome=114.0.5735.106)\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebElement.Execute(String commandToExecute, Dictionary`2 parameters)\n   at OpenQA.Selenium.WebElement.Click()\n   at Todoist_BDD.src.code.control.Control.Click() in /home/runner/work/Todoist-BDD/Todoist-BDD/Todoist-BDD/src/code/control/Control.cs:line 29\n   at Todoist_BDD.src.code.test.specflow.BaseSteps.LogIn(String email, String password) in /home/runner/work/Todoist-BDD/Todoist-BDD/Todoist-BDD/src/code/test/specflow/BaseSteps.cs:line 18\n   at Todoist_BDD.src.code.test.specflow.LogInStepDefinitions.WhenITryToLogIn() in /home/runner/work/Todoist-BDD/Todoist-BDD/Todoist-BDD/src/code/test/specflow/LogInStepDefinitions.cs:line 24\n   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)\n   at Allure.SpecFlowPlugin.AllureBindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)\n   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments, TimeSpan& duration)\n   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Given  A valid email and password",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "table",
+          "source": "2c5cd4a48c6245438e645ddb5f6773f9-attachment.csv",
+          "type": "text/csv"
+        }
+      ],
+      "parameters": [],
+      "start": 1686069099671,
+      "stop": 1686069102857
+    },
+    {
+      "name": "When  I try to logIn",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1686069102858,
+      "stop": 1686069144946
+    },
+    {
+      "name": "Then  I expect to be successfully LogedIn",
+      "status": "skipped",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1686069144947,
+      "stop": 1686069144948
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1686069099646,
+  "stop": 1686069144955
+}
