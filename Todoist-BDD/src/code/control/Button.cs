@@ -17,13 +17,6 @@ namespace Todoist_BDD.src.code.control
             return control.Enabled;
         }
 
-        /*public void HoverAndRightClick()
-        {
-            FindControl();
-            Actions action = new Actions(Session.Instance().GetBrowser());
-            action.MoveToElement(control).ContextClick(control).Perform();
-        }*/
-
         public void HoverOnButton()
         {
             FindControl();

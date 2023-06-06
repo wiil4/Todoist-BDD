@@ -20,7 +20,8 @@ namespace Todoist_BDD.src.code.test.specflow
         [When(@"I navigate to Projects")]
         public void WhenINavigateToProjects()
         {
-            WebDriverWait wait = new WebDriverWait(Session.Instance().GetBrowser(), TimeSpan.FromSeconds(10));
+            IWebDriver driver = Session.Instance().GetBrowser();
+            WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
 
             // Define the condition function
             Func<IWebDriver, bool> overlayCondition = (d) =>
@@ -28,7 +29,7 @@ namespace Todoist_BDD.src.code.test.specflow
                 try
                 {
                     // Locate the overlay element
-                    IWebElement overlay = Session.Instance().GetBrowser().FindElement(By.CssSelector("div.GB_overlay"));
+                    IWebElement overlay = driver.FindElement(By.CssSelector("div.GB_overlay"));
                     // Check if the overlay element is visible or not present
                     return !overlay.Displayed;
                 }
@@ -41,9 +42,27 @@ namespace Todoist_BDD.src.code.test.specflow
 
             // Wait until the condition is met
             wait.Until(overlayCondition);
+
+            // Wait for the projects button to become clickable
+            wait.Until((d) =>
+            {
+                try
+                {
+                    // Check if the projects button is clickable
+                    return projectsSection.projectsButton.IsEnabled() && projectsSection.projectsButton.IsControlDisplayed();
+                }
+                catch (StaleElementReferenceException)
+                {
+                    // If the projects button is no longer attached to the DOM, consider it as not clickable
+                    return false;
+                }
+            });
+
+
             projectsSection.projectsButton.Click();
             projectsSection.addProjectButton.Click();
             Thread.Sleep(1000);
+
         }
 
         [When(@"I try to add a new project with name ""([^""]*)""")]

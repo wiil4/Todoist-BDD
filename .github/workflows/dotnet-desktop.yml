@@ -30,10 +30,6 @@ jobs:
           chmod +x chromedriver/chromedriver
           sudo mv chromedriver/chromedriver /usr/local/bin/
           rm -rf chromedriver   
-      - name: Print Working Directory
-        run: |
-          pwd
-          ls -al
       - name: Install dependencies
         run: dotnet restore
       - name: Build
