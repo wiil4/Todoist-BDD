@@ -26,6 +26,10 @@ jobs:
           wget -O chromedriver.zip https://chromedriver.storage.googleapis.com/${LATEST_VERSION}/chromedriver_linux64.zip
           unzip chromedriver.zip -d chromedriver
           chmod +x chromedriver/chromedriver
+      - name: Print Working Directory
+        run: |
+          pwd
+          ls -al
       - name: Install dependencies
         run: dotnet restore
       - name: Build
