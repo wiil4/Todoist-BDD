@@ -38,5 +38,18 @@ public class Chrome : IBrowser
         }
     }
 ```
+3. If working locally, it is also necessary to comment the code (RemoveOverlay) at CreateProjectStepDefinitions.cs, as mentioned below:
+```csharp
+[When(@"I navigate to Projects")]
+        public void WhenINavigateToProjects()
+        {
+            //RemoveOverlay();
+            projectsSection.projectsButton.Click();            
+            projectsSection.addProjectButton.Click();
+            Thread.Sleep(1000);
+
+        }
+```
+This is because when it was being tested through git hub actions, it detected that something was overlaying the projects button and it was necessary to remove that overlay in order to click the button
 
 
