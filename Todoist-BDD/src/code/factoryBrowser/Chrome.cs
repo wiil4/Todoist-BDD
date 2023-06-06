@@ -17,14 +17,13 @@ namespace Todoist_BDD.src.code.factoryBrowser
             //locally
             //string chromeDriverPath = Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.FullName;
             var chromeOptions = new ChromeOptions();
-            chromeOptions.AddArgument("start-maximized");
-            chromeOptions.AddArgument("--disable-gpu");
-            chromeOptions.AddArgument("--headless");
-            //chromeOptions.AddArgument("--window-size=1366,768");
+            //chromeOptions.AddArgument("start-maximized");
+            chromeOptions.AddArgument("--window-size=1366,768");
+            //chromeOptions.AddArgument("--disable-gpu");
+            chromeOptions.AddArgument("--headless");            
             //chromeOptions.AddArgument("--no-sandbox");
             IWebDriver driver = new ChromeDriver(chromeDriverPath, chromeOptions);
-
-            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(20);
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(30);
             //driver.Manage().Window.Maximize();
             return driver;
         }
