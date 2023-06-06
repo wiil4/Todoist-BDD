@@ -61,5 +61,4 @@ jobs:
       - name: Run Selenium tests
         run: |
           export CHROME_BIN=/usr/bin/chromium-browser
-          export CHROME_DRIVER_PATH=./Todoist-BDD/src/resources/driver
           dotnet test
