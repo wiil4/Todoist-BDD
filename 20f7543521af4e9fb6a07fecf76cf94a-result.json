@@ -1,0 +1,132 @@
+{
+  "uuid": "597b0d82f9f84c6d86c05d9179e3374a",
+  "historyId": "TC04Delete Project",
+  "fullName": "TC04Delete Project",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-4S814UH"
+    },
+    {
+      "name": "feature",
+      "value": "TodoistCRUD"
+    },
+    {
+      "name": "tag",
+      "value": "project-deletion"
+    },
+    {
+      "name": "tag",
+      "value": "functionality"
+    }
+  ],
+  "links": [],
+  "name": "TC04Delete Project",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Given  I am correctly logged in",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1686065291523,
+      "stop": 1686065293964
+    },
+    {
+      "name": "When  I hover on project with name \"Mojix2023\"",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1686065293964,
+      "stop": 1686065307593
+    },
+    {
+      "name": "And  I right click on it",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1686065307593,
+      "stop": 1686065307877
+    },
+    {
+      "name": "And  I click on delete project button",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1686065307877,
+      "stop": 1686065307919
+    },
+    {
+      "name": "And  I confirm the project deletion",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1686065307919,
+      "stop": 1686065307967
+    },
+    {
+      "name": "Then  I expect the project to be deleted",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1686065307967,
+      "stop": 1686065328018
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1686065291523,
+  "stop": 1686065328018
+}

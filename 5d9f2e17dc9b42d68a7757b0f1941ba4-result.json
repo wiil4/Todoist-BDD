@@ -1,0 +1,132 @@
+{
+  "uuid": "cccdb5cf7d86443e9159b79eb5660f56",
+  "historyId": "TC02Project Creation",
+  "fullName": "TC02Project Creation",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-4S814UH"
+    },
+    {
+      "name": "feature",
+      "value": "TodoistCRUD"
+    },
+    {
+      "name": "tag",
+      "value": "project-creation"
+    },
+    {
+      "name": "tag",
+      "value": "functionality"
+    }
+  ],
+  "links": [],
+  "name": "TC02Project Creation",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Given  I am correctly logged in",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1686065398406,
+      "stop": 1686065405392
+    },
+    {
+      "name": "When  I navigate to Projects",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1686065405392,
+      "stop": 1686065420457
+    },
+    {
+      "name": "And  I try to add a new project with name \"MojixProject\"",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1686065420457,
+      "stop": 1686065420514
+    },
+    {
+      "name": "Then  I expect the Add button to be enabled",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1686065420514,
+      "stop": 1686065420524
+    },
+    {
+      "name": "When  I click on Add button",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1686065420524,
+      "stop": 1686065421608
+    },
+    {
+      "name": "Then  I expect project to be displayed",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1686065421608,
+      "stop": 1686065421986
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1686065398406,
+  "stop": 1686065421986
+}

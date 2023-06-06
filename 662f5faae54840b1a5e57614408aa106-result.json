@@ -1,0 +1,132 @@
+{
+  "uuid": "a80844a3cea144928231b2661fe19091",
+  "historyId": "TC03Updating Project Name",
+  "fullName": "TC03Updating Project Name",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-4S814UH"
+    },
+    {
+      "name": "feature",
+      "value": "TodoistCRUD"
+    },
+    {
+      "name": "tag",
+      "value": "update-project-name"
+    },
+    {
+      "name": "tag",
+      "value": "functionality"
+    }
+  ],
+  "links": [],
+  "name": "TC03Updating Project Name",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Given  I am correctly logged in",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1686064866004,
+      "stop": 1686064869195
+    },
+    {
+      "name": "When  I hover on project with name \"MojixProject\"",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1686064869195,
+      "stop": 1686064883967
+    },
+    {
+      "name": "And  I right click on it",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1686064883967,
+      "stop": 1686064884248
+    },
+    {
+      "name": "And  I click on edit project button",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1686064884248,
+      "stop": 1686064884293
+    },
+    {
+      "name": "And  I change the project name to \"Mojix2023\"",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1686064884293,
+      "stop": 1686064885434
+    },
+    {
+      "name": "Then  I expect the project name changed in projects list",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1686064885434,
+      "stop": 1686064885446
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1686064866004,
+  "stop": 1686064885446
+}
