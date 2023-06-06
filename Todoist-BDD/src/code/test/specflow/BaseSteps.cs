@@ -13,8 +13,7 @@ namespace Todoist_BDD.src.code.test.specflow
         protected ProjectsSection projectsSection = new ProjectsSection();
 
         protected void LogIn(string email, string password)
-        {
-            Thread.Sleep(2000);
+        {            
             mainPage.logInButton.Click();
             logInPage.LogIn(email, password);
         }
@@ -22,6 +21,7 @@ namespace Todoist_BDD.src.code.test.specflow
         public void OpenBrowser()
         {
             Session.Instance().GetBrowser().Navigate().GoToUrl("https://todoist.com/");
+            Thread.Sleep(5000);
         }
 
         public void CloseBrowser()

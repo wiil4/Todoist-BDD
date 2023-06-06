@@ -21,7 +21,7 @@ namespace Todoist_BDD.src.code.factoryBrowser
             //chromeOptions.AddArgument("--no-sandbox");
             IWebDriver driver = new ChromeDriver(chromeDriverPath, chromeOptions);
 
-            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(40);
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(20);
             driver.Manage().Window.Maximize();
             return driver;
         }
