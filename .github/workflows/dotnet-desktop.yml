@@ -16,6 +16,15 @@ jobs:
         uses: actions/setup-dotnet@v3
         with:
           dotnet-version: ${{ matrix.dotnet-version }}
+      - name: Install Chrome browser
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y chromium-browser
+      - name: Download ChromeDriver
+        run: |
+          wget -O chromedriver.zip https://chromedriver.storage.googleapis.com/${{ env.CHROME_VERSION }}/chromedriver_linux64.zip
+          unzip chromedriver.zip -d chromedriver
+          chmod +x chromedriver/chromedriver
       - name: Install dependencies
         run: dotnet restore
       - name: Build
@@ -47,3 +56,8 @@ jobs:
           PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PUBLISH_BRANCH: gh-pages
           PUBLISH_DIR: allure-report
+      - name: Run Selenium tests
+        run: |
+          export CHROME_BIN=/usr/bin/chromium-browser
+          export CHROME_DRIVER_PATH=./chromedriver/chromedriver
+          dotnet test
