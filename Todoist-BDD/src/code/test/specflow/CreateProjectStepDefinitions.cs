@@ -20,9 +20,10 @@ namespace Todoist_BDD.src.code.test.specflow
         [When(@"I navigate to Projects")]
         public void WhenINavigateToProjects()
         {
-            Thread.Sleep(5000);
-            projectsSection.projectsButton.Click();
-            Thread.Sleep(5000);
+            IJavaScriptExecutor executor = (IJavaScriptExecutor)Session.instance.GetBrowser();
+            executor.ExecuteScript("arguments[0].click();", projectsSection.projectsButton);
+            //projectsSection.projectsButton.Click();
+            
             projectsSection.addProjectButton.Click();
             Thread.Sleep(1000);
 
