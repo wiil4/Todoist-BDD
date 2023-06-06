@@ -14,11 +14,11 @@ namespace Todoist_BDD.src.code.factoryBrowser
         {
             string chromeDriverPath = string.Empty;
             #region //githubactions
-            //chromeDriverPath = $"/usr/local/bin";
+            chromeDriverPath = $"/usr/local/bin";
             #endregion
 
             #region //Locally
-            chromeDriverPath = Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.FullName;
+            //chromeDriverPath = Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.FullName;
             #endregion
 
             var chromeOptions = new ChromeOptions();
