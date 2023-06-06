@@ -21,7 +21,7 @@ namespace Todoist_BDD.src.code.test.specflow
         public void OpenBrowser()
         {
             Session.Instance().GetBrowser().Navigate().GoToUrl("https://todoist.com/");
-            Thread.Sleep(5000);
+            Thread.Sleep(2000);
         }
 
         public void CloseBrowser()
