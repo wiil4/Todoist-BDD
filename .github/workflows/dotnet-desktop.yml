@@ -16,13 +16,6 @@ jobs:
         uses: actions/setup-dotnet@v3
         with:
           dotnet-version: ${{ matrix.dotnet-version }}
-      - name: Install Chrome
-        run: |
-          CHROME_VERSION=$(curl --location "https://chromedriver.storage.googleapis.com/LATEST_RELEASE")
-          curl "https://chromedriver.storage.googleapis.com/${CHROME_VERSION}/chromedriver_linux64.zip" --output chromedriver_linux64.zip
-          unzip chromedriver_linux64.zip -d chromedriver
-          chmod +x chromedriver/chromedriver
-          sudo mv chromedriver/chromedriver Todoist-BDD/Todoist-BDD/src/resources/driver/
       - name: Install dependencies
         run: dotnet restore
       - name: Build
