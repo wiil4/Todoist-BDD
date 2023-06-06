@@ -13,7 +13,13 @@ namespace Todoist_BDD.src.code.factoryBrowser
         public IWebDriver Create()
         {
             string path = Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.FullName;
-            IWebDriver driver = new ChromeDriver($"{path}/src/resources/chromedriver.exe");
+            string chromeDriverPath = $"{path}/src/resources/chromedriver/chromedriver";
+
+            var chromeOptions = new ChromeOptions();
+            chromeOptions.AddArgument("--headless");
+            chromeOptions.AddArgument("--no-sandbox");
+            IWebDriver driver = new ChromeDriver(chromeDriverPath, chromeOptions);
+
             driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(20);
             driver.Manage().Window.Maximize();
             return driver;
