@@ -24,8 +24,8 @@ jobs:
         run: |
           LATEST_VERSION=$(curl -sS https://chromedriver.storage.googleapis.com/LATEST_RELEASE)
           wget -O chromedriver.zip https://chromedriver.storage.googleapis.com/${LATEST_VERSION}/chromedriver_linux64.zip
-          unzip chromedriver.zip -d src/resources/chromedriver
-          chmod +x src/resources/chromedriver/chromedriver
+          unzip chromedriver.zip -d chromedriver
+          chmod +x chromedriver/chromedriver
       - name: Print Working Directory
         run: |
           pwd

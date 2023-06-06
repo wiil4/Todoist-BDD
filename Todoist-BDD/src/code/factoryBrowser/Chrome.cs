@@ -13,7 +13,7 @@ namespace Todoist_BDD.src.code.factoryBrowser
         public IWebDriver Create()
         {
             string path = Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.FullName;
-            string chromeDriverPath = $"{path}/src/resources/chromedriver/chromedriver";
+            string chromeDriverPath = $"{path}/chromedriver/chromedriver";
 
             var chromeOptions = new ChromeOptions();
             chromeOptions.AddArgument("--headless");
