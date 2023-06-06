@@ -16,6 +16,7 @@ namespace Todoist_BDD.src.code.test.specflow
         {            
             mainPage.logInButton.Click();
             logInPage.LogIn(email, password);
+            Thread.Sleep(5000);
         }
 
         public void OpenBrowser()

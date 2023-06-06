@@ -25,7 +25,7 @@ namespace Todoist_BDD.src.code.factoryBrowser
             chromeOptions.AddArgument("--window-size=1920,1080");
             chromeOptions.AddArgument("--headless");            
             IWebDriver driver = new ChromeDriver(chromeDriverPath, chromeOptions);
-            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(20);
             //driver.Manage().Window.Maximize();
             return driver;
         }
